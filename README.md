@@ -1,4 +1,4 @@
-# iOS-SwiftUI-UIHostingController
+# iOS-SwiftUI-UIPopoverPresentationController
 
 <br/>**Images**
 ![modules](/image/image.png)
@@ -7,6 +7,7 @@
 
 <br/>**Technologies**
 * SwiftUI
+* UIPopoverPresentationController
 * UIHostingController
 * UIKit & Storyboard
 
