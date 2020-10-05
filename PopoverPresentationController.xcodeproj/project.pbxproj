@@ -13,6 +13,8 @@
 		92829C8E252ACFA8008A3262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92829C8C252ACFA8008A3262 /* Main.storyboard */; };
 		92829C90252ACFAA008A3262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92829C8F252ACFAA008A3262 /* Assets.xcassets */; };
 		92829C93252ACFAA008A3262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92829C91252ACFAA008A3262 /* LaunchScreen.storyboard */; };
+		92829C9B252AD045008A3262 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92829C9A252AD045008A3262 /* MenuViewController.swift */; };
+		92829C9D252AD417008A3262 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92829C9C252AD417008A3262 /* PopoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		92829C8F252ACFAA008A3262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92829C92252ACFAA008A3262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92829C94252ACFAA008A3262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92829C9A252AD045008A3262 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		92829C9C252AD417008A3262 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				92829C8F252ACFAA008A3262 /* Assets.xcassets */,
 				92829C91252ACFAA008A3262 /* LaunchScreen.storyboard */,
 				92829C94252ACFAA008A3262 /* Info.plist */,
+				92829C9A252AD045008A3262 /* MenuViewController.swift */,
+				92829C9C252AD417008A3262 /* PopoverView.swift */,
 			);
 			path = PopoverPresentationController;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				92829C8B252ACFA8008A3262 /* ViewController.swift in Sources */,
 				92829C87252ACFA8008A3262 /* AppDelegate.swift in Sources */,
 				92829C89252ACFA8008A3262 /* SceneDelegate.swift in Sources */,
+				92829C9D252AD417008A3262 /* PopoverView.swift in Sources */,
+				92829C9B252AD045008A3262 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

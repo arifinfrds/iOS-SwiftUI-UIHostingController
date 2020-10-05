@@ -9,12 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func didTapPopButton(_ sender: UIBarButtonItem) {
+        let menuViewController = makeMenuViewController()
+        
+        let popoverPresentationController = menuViewController.popoverPresentationController
+        popoverPresentationController?.permittedArrowDirections = .any
+        popoverPresentationController?.delegate = self
+        popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        popoverPresentationController?.sourceView = self.view
+        
+        present(menuViewController, animated: true, completion: nil)
+    }
+    
+    func makeMenuViewController() -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "MenuViewController")
+        viewController.modalPresentationStyle = .popover
+        viewController.preferredContentSize = CGSize(width: 200, height: 250)
+        return viewController
+    }
+    
+}
 
-
+extension ViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        .none
+    }
 }
 
