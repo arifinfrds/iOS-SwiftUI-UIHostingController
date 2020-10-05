@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func didTapPopButton(_ sender: UIBarButtonItem) {
@@ -31,7 +30,7 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "MenuViewController")
         viewController.modalPresentationStyle = .popover
-        viewController.preferredContentSize = CGSize(width: 200, height: 250)
+        viewController.preferredContentSize = CGSize(width: 250, height: 250)
         return viewController
     }
     
